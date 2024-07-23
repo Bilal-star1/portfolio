@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <!-- library for testimonials -->
+
+
+
+    <!-- meta tags -->
+    <meta name="description"
+        content="Bilal Baig's portfolio showcasing skills, experience, and work in UI/UX design and development.">
+    <meta name="keywords" content="Bilal Baig, UI/UX Design, Web Development, Portfolio, Australia">
+    <title>Bilal Baig | UI/UX Designer & Web Developer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ef0bc6ac2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-item logo">
+                    <span class="highlight">B</span>ilal<span class="dot">.</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" class="btn3 login-btn">Login</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+                <h2 class="intro">
+                    <div class="slideIn">
+                      <span class="name">Hi, I am Bilal.</span>
+                      <span class="developer">a &lt;developer/&gt;.</span>
+                      <span class="designer">a Designer.</span>
+                      <span class="dad">a future dad.</span>
+                      <!-- <span class="tool">a tool (according to my wife).</span> -->
+                    </div>
+                  </h2>
+                  <div class="header-text">
+                <!-- <p>UI/UX Designer</p> -->
+                <!-- <h1>Hi, I'm <span>Bilal</span><br> Baig from Australia</h1> -->
+                <div class="cv-access">
+                    <button class="btn btn2" onclick="showPinInput()">Download CV</button>
+                    <div id="pinSection" class="pin-section" style="display: none;">
+                        <h2>Enter Pin to Download CV</h2>
+                        <input type="text" id="pinInput" placeholder="Enter Pin">
+                        <button class="btn btn2" onclick="downloadCV()">Submit</button>
+                        <p id="errorMessage" class="error-message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur quasi illo
+                        architecto numquam. Deserunt obcaecati provident ipsum, optio numquam ipsa laborum hic tenetur
+                        sint itaque. Quod expedita natus eum.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute </li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Sydney.</li>
+                            <li><span>2014</span><br>BBA from ISM Melbourne.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- skill Graph -->
+
+    <!-- <div id="skills-interactive">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-graph">
+                <div class="skill" data-skill="Web Design" style="--skill-color: #ff6f61; --skill-value: 85;">
+                    <span class="skill-name">Web Design</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill" data-skill="UI/UX Design" style="--skill-color: #4caf50; --skill-value: 90;">
+                    <span class="skill-name">UI/UX Design</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill" data-skill="Front-end Development" style="--skill-color: #00bcd4; --skill-value: 75;">
+                    <span class="skill-name">Front-end Development</span>
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+
+
+
+                <p>Add more skills as needed</p>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- Testimonials -->
+    <div id="testimonials" >
+        <div class="container">
+            <h1 class="sub-title">What People Say</h1>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="./images/user.png" alt="Author 1">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p>CEO, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="./images/user.png" alt="Author 1">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p>CEO, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="./images/user.png" alt="Author 1">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p>CEO, Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Working with Mehran was a pleasure. His creativity and problem-solving skills exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="author2.jpg" alt="Author 2">
+                        <div>
+                            <h3>Jane Smith</h3>
+                            <p>Lead Designer, Creative Agency</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonial items as needed -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Timeline -->
+    <div id="timeline">
+        <div class="container">
+            <h1 class="sub-title">Experience Timeline</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="start-year">2022</span> - <span class="end-year">2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Project Milestone 1</h3>
+                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Project Milestone 2</h3>
+                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Project Milestone 2</h3>
+                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Project Milestone 2</h3>
+                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.
+                            Details about the milestone or experience during this time period. Include significant achievements or events.
+                            Details about the milestone or experience during this time period. Include significant achievements or events.
+                        </p>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </div>
+    </div>
+
+<!-- contact  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title ">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0411XXXXXX</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your Name" required pattern="[A-Za-z\s]+">
+                    <input type="email" name="Email" id="" placeholder="Your Email" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <div class="copyright">
+        <p>Copyright &#169; Bilal Baig. Made with &nbsp;<i class="fas fa-heart"></i> </p>
+    </div>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
