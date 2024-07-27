@@ -167,7 +167,7 @@ body{
 /*     font-family: "Caveat", cursive; */
     font-size: 1.6rem; /* Maintain a good size */
     line-height: 1.8; /* Optimal line height for readability */
-    letter-spacing: 1.3px;
+    letter-spacing: 1.2px;
     color: #343a40; /* Dark color for good contrast */
     background-color: transparent; /* Remove background for better blending */
     padding: 10px 0; /* Vertical padding for breathing space */
