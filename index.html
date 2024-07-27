@@ -2,354 +2,451 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Bilal Baig |  Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.svg" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-        <!-- library for testimonials -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- meta tags -->
-    <meta name="description"
-        content="Bilal Baig's portfolio showcasing skills, experience, and work in UI/UX design and development.">
-    <meta name="keywords" content="Bilal Baig, UI/UX Design, Web Development, Portfolio, Australia">
-    <title>Bilal Baig | UI/UX Designer & Web Developer</title>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/ef0bc6ac2c.js" crossorigin="anonymous"></script>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <div class="nav-item logo">
-                    <span class="highlight">B</span>ilal<span class="dot">.</span>
-                </div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="login.html" class="btn3 login-btn">Login</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-                <h2 class="intro">
-                    <div class="slideIn">
-                      <span class="name">Hi, I am Bilal.</span>
-                      <span class="developer">a &lt;developer/&gt;.</span>
-                      <span class="designer">a Designer.</span>
-                      <span class="dad">a future dad.</span>
-                      <!-- <span class="tool">a tool (according to my wife).</span> -->
-                    </div>
-                  </h2>
-                  <div class="header-text">
-                <!-- <p>UI/UX Designer</p> -->
-                <!-- <h1>Hi, I'm <span>Bilal</span><br> Baig from Australia</h1> -->
-                <div class="cv-access">
-                    <button class="btn btn2" onclick="showPinInput()">Download CV</button>
-                    <div id="pinSection" class="pin-section" style="display: none;">
-                        <h2>Enter Pin to Download CV</h2>
-                        <input type="text" id="pinInput" placeholder="Enter Pin">
-                        <button class="btn btn2" onclick="downloadCV()">Submit</button>
-                        <p id="errorMessage" class="error-message"></p>
-                    </div>
-                </div>
-            </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur quasi illo
-                        architecto numquam. Deserunt obcaecati provident ipsum, optio numquam ipsa laborum hic tenetur
-                        sint itaque. Quod expedita natus eum.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute </li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Sydney.</li>
-                            <li><span>2014</span><br>BBA from ISM Melbourne.</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Bilal Baig</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About Me</a>
+                <a href="#skill" class="nav-item nav-link">Education & Experience</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Bilal Baig</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#testimonial" class="nav-item nav-link">Testimonials</a>
+                <a href="#contact" class="nav-item nav-link">Contact Me</a>
             </div>
         </div>
-    </div>
-    <!-- Services -->
+    </nav>
+    <!-- Navbar End -->
 
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------portfolio----------- -->
+    <!-- Header Start -->
 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./images/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/work-3.png">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate natus.</p>
-                        <a href=""><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
+    <!-- Header End -->
 
-
-    <!-- skill Graph -->
-
-    <!-- <div id="skills-interactive">
-        <div class="container">
-            <h1 class="sub-title">My Skills</h1>
-            <div class="skills-graph">
-                <div class="skill" data-skill="Web Design" style="--skill-color: #ff6f61; --skill-value: 85;">
-                    <span class="skill-name">Web Design</span>
-                    <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill" data-skill="UI/UX Design" style="--skill-color: #4caf50; --skill-value: 90;">
-                    <span class="skill-name">UI/UX Design</span>
-                    <span class="skill-percentage">90%</span>
-                </div>
-                <div class="skill" data-skill="Front-end Development" style="--skill-color: #00bcd4; --skill-value: 75;">
-                    <span class="skill-name">Front-end Development</span>
-                    <span class="skill-percentage">75%</span>
-                </div>
-
-
-
-
-                <p>Add more skills as needed</p>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-
-    <!-- Testimonials -->
-    <div id="testimonials" >
-        <div class="container">
-            <h1 class="sub-title">What People Say</h1>
-            <div class="testimonials-grid">
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="./images/user.png" alt="Author 1">
-                        <div>
-                            <h3>John Doe</h3>
-                            <p>CEO, Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="./images/user.png" alt="Author 1">
-                        <div>
-                            <h3>John Doe</h3>
-                            <p>CEO, Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Mehran is an exceptional developer. His attention to detail and dedication to the project were truly impressive."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="./images/user.png" alt="Author 1">
-                        <div>
-                            <h3>John Doe</h3>
-                            <p>CEO, Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Working with Mehran was a pleasure. His creativity and problem-solving skills exceeded our expectations."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="author2.jpg" alt="Author 2">
-                        <div>
-                            <h3>Jane Smith</h3>
-                            <p>Lead Designer, Creative Agency</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more testimonial items as needed -->
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Timeline -->
-    <div id="timeline">
-        <div class="container">
-            <h1 class="sub-title">Experience Timeline</h1>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="start-year">2022</span> - <span class="end-year">2024</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Project Milestone 1</h3>
-                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Project Milestone 2</h3>
-                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Project Milestone 2</h3>
-                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="start-year">2019</span> - <span class="end-year">2021</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Project Milestone 2</h3>
-                        <p>Details about the milestone or experience during this time period. Include significant achievements or events.
-                            Details about the milestone or experience during this time period. Include significant achievements or events.
-                            Details about the milestone or experience during this time period. Include significant achievements or events.
-                        </p>
-                    </div>
-                </div>
-                <!-- Add more timeline items as needed -->
-            </div>
-        </div>
-    </div>
-
-<!-- contact  -->
-<div id="contact">
+<div class="container-fluid bg-light my-6 mt-0" id="home">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title ">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>0411XXXXXX</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
+        <div class="row g-5 align-items-center">
+            <!-- Text on left and image on right for wider screens -->
+            <div class="col-lg-6 text-center text-lg-start py-6 pb-0 pt-lg-0">
+                <h3 class="text-primary mb-3">I'm</h3>
+                <h1 class="display-3 mb-3">Bilal Baig</h1>
+                <h2 class="typed-text-output d-inline"></h2>
+                <div class="typed-text d-none">Civil Engineer, Project Manager, Site Supervisor, Structural Design Specialist</div>
+                <p class="mt-4 styled-paragraph ">Delivering excellence in project management with a passion for continuous improvement.</p>
+
+
+
+<div class="d-flex flex-column justify-content-center justify-content-lg-start pt-5">
+    <!-- Button for Download CV -->
+    <a href="#" class="btn btn-primary py-3 px-4 btn-hover" id="downloadCvBtn">
+      <span class="btn-text">Download CV</span>
+    </a>
+
+    <!-- PIN Input Section -->
+    <div id="pinSection" class="mt-3">
+      <input type="password" id="pinInput" class="form-control mt-2" placeholder="Enter PIN">
+      <button id="submitPin" class="btn btn-secondary mt-2">Submit</button>
+      <p id="errorMessage" style="color: red;" class="mt-2"></p>
+    </div>
+</div>
+
+
+
+
+
 
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" id="" placeholder="Your Name" required pattern="[A-Za-z\s]+">
-                    <input type="email" name="Email" id="" placeholder="Your Email" required>
-                    <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-
-                <span id="msg"></span>
+            <!-- Image on right for wider screens, full-width on smaller screens -->
+            <div class="col-lg-6 img-container">
+                <img class="img-fluid" src="img/5.png" alt="">
             </div>
         </div>
     </div>
 
 </div>
-    <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <div class="copyright">
-        <p>Copyright &#169; Bilal Baig. Made with &nbsp;<i class="fas fa-heart"></i> </p>
+
+
+
+
+
+
+
+
+    <!-- About Start -->
+
+
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- Decorative border -->
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">8</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <div class="decorative-border">
+                            <h3 class="lh-base mb-0">of <span class="experience">experience</span> in <span class="highlight">civil engineering</span> and <span class="highlight">project management</span></h3>
+                        </div>
+                    </div>
+                    <!-- Text with larger font size -->
+                    <p class="mb-4 large-text">Passionate about designing sustainable infrastructure and delivering high-quality engineering solutions. Dedicated to ensuring safety and efficiency in every project.</p>
+                    <p class="mb-3 large-text"><i class="far fa-check-circle text-primary me-3"></i>Cost-Effective Solutions</p>
+                    <p class="mb-3 large-text"><i class="far fa-check-circle text-primary me-3"></i>Commitment to Quality</p>
+                    <p class="mb-3 large-text"><i class="far fa-check-circle text-primary me-3"></i>Timely Project Completion</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Satisfied Clients</h5>
+                        <h2 class="text-primary fw-bold mb-0">
+                            <span class="counter" data-target="50">0</span><span class="plus-icon">+</span>
+                        </h2>
+                    </div>
+                    <p class="mb-4 large-text">Dedicated to delivering exceptional results and building lasting relationships with clients through transparency and reliability.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                        <h2 class="text-primary fw-bold mb-0">
+                            <span class="counter" data-target="100">0</span><span class="plus-icon">+</span>
+                        </h2>
+                    </div>
+                    <p class="mb-0 large-text">Experience spans residential, commercial, and industrial projects, consistently exceeding expectations and achieving excellence.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-<script src="main.js"></script>
+
+    <!-- About End -->
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5" style="color: #333;">Education & Experience</h1>
+                    <p class="mb-4" style="color: #555;">With a solid educational foundation in civil engineering, I have gained valuable insights and hands-on experience in various aspects of design, construction, and project management.</p>
+                    <p style="color: #555;">My journey encompasses diverse roles and responsibilities that have enriched my professional growth and equipped me to tackle complex challenges in the field.</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Civil Engineer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2010 - 2015</p>
+                                    <h6 style="color: #444;">ABC Constructions</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Project Manager</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2015 - 2020</p>
+                                    <h6 style="color: #444;">XYZ Infrastructure</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Senior Project Manager</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2020 - Present</p>
+                                    <h6 style="color: #444;">Global Engineers Ltd</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Consultant</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2021 - Present</p>
+                                    <h6 style="color: #444;">Independent</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Bachelor of Civil Engineering</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2006 - 2010</p>
+                                    <h6 style="color: #444;">National University of Engineering</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Master of Project Management</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2013 - 2015</p>
+                                    <h6 style="color: #444;">International University of Management</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Professional Engineer Certification</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2016</p>
+                                    <h6 style="color: #444;">Engineering Council</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="years-heading">Project Management Professional (PMP)</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-muted mb-1 years-text">2018</p>
+                                    <h6 style="color: #444;">Project Management Institute</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Expertise End -->
+
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonials</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-left h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">"Working with Bilal has been a transformative experience. His expertise in civil engineering and project management has significantly elevated our projects' standards and efficiency."</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Ayfer Erturk</h5>
+                            <span>Project Coordinator</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">"Bilal's attention to detail and commitment to quality are unmatched. His leadership on the team has led to successful project deliveries time and again."</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Warren Major</h5>
+                            <span>Architect</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">"I highly recommend Bilal for any civil engineering project. His insights and strategic planning have made a significant difference in our outcomes."</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Dragan Putica</h5>
+                            <span>Construction Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-right h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0 fancy-heading">Get in Touch</h1>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="contact-label mb-2">My Current Location:</p>
+                    <h3 class="contact-info">Bankstown, NSW, AUSTRALIA</h3>
+                    <hr class="w-100">
+                    <p class="contact-label mb-2">Call me:</p>
+                    <h3 class="contact-info">+61 411 405 767 677</h3>
+                    <hr class="w-100">
+                    <p class="contact-label mb-2">Mail me:</p>
+                    <h3 class="contact-info">bilalce39@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="contact-label mb-2 connect-title">Connect with Me:</p>
+                    <div class="d-flex pt-2 mt-3">
+                        <a class="btn btn-square btn-primary me-2 social-icon" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2 social-icon" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2 social-icon" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2 social-icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4 connect-message">I'm always open to connect and share ideas! Feel free to reach out using the form below, and I’ll get back to you as soon as I can.</p>
+                    <form name="contact" netlify>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" style="border: 1px solid #ced4da; border-radius: 0.25rem; font-family: 'Roboto', sans-serif;">
+                                    <label for="name" style="color: #6c757d;">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" style="border: 1px solid #ced4da; border-radius: 0.25rem; font-family: 'Roboto', sans-serif;">
+                                    <label for="email" style="color: #6c757d;">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" style="border: 1px solid #ced4da; border-radius: 0.25rem; font-family: 'Roboto', sans-serif;">
+                                    <label for="subject" style="color: #6c757d;">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px; border: 1px solid #ced4da; border-radius: 0.25rem; font-family: 'Roboto', sans-serif;"></textarea>
+                                    <label for="message" style="color: #6c757d;">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Contact End -->
+
+
+
+
+
+    <!-- Copyright Start -->
+
+        <div class="container-fluid bg-dark text-light py-4">
+            <div class="container text-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                    <p class="mb-0 me-2">
+                        &copy; 2024 All rights reserved.
+                    </p>
+                    <p class="mb-0">
+                        Crafted with ❤️ by <span class="text-secondary"> Bilal Baig</span>
+                    </p>
+                </div>
+                <p class="mt-2">
+                    <small class="text-muted">Designed with precision and a passion for quality</small>
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!--  Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
