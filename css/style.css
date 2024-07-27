@@ -93,6 +93,7 @@ body{
 }
 
 .navbar .navbar-nav .nav-link {
+    font-family: "Open Sans",sans-serif;
     padding: 20px 15px;
     color: var(--dark);
     font-size: 18px;
